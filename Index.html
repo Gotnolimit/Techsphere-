@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechSphere 3D - Latest Tech News</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <div class="content">
+    <nav>
+      <div class="logo">TECHSPHERE</div>
+      <ul class="nav-links">
+        <li><a href="Index.html" class="active">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#data">Insights</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="home">
+      <h1>The Future of Tech News</h1>
+      <p>Immersive 3D Experience • Real-Time Updates • Global Coverage</p>
+    </section>
+
+    <section class="news-section" id="news">
+      <h2 class="section-title">Latest Headlines</h2>
+      <div class="news-grid">
+        <div class="news-card">
+          <span class="category">AI</span>
+          <h3>Revolutionary AI Model Breakthrough</h3>
+          <p>Scientists announce major advancement in quantum machine learning, promising 10x efficiency improvements in neural network training.</p>
+          <a href="article.html?id=ai-1" class="read-more">Read More →</a>
+        </div>
+
+        <div class="news-card">
+          <span class="category">Space</span>
+          <h3>Mars Colony Plans Accelerate</h3>
+          <p>New propulsion technology could reduce travel time to Mars by 40%, making colonization more feasible than ever before.</p>
+          <a href="article.html?id=space-1" class="read-more">Read More →</a>
+        </div>
+
+        <div class="news-card">
+          <span class="category">Cybersecurity</span>
+          <h3>Quantum Encryption Goes Mainstream</h3>
+          <p>Major tech companies adopt quantum-resistant encryption protocols to prepare for post-quantum computing era.</p>
+          <a href="article.html?id=cyber-1" class="read-more">Read More →</a>
+        </div>
+
+        <div class="news-card">
+          <span class="category">Gadgets</span>
+          <h3>Holographic Displays Launch Globally</h3>
+          <p>Consumer-grade holographic technology hits the market, transforming how we interact with digital content.</p>
+          <a href="article.html?id=gadgets-1" class="read-more">Read More →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="topics-section" id="topics">
+      <h2 class="section-title">Explore Topics</h2>
+      <div class="topics-grid">
+        <div class="topic-hub"><div class="topic-icon">🤖</div><h3>Artificial Intelligence</h3></div>
+        <div class="topic-hub"><div class="topic-icon">🚀</div><h3>Space Tech</h3></div>
+        <div class="topic-hub"><div class="topic-icon">🔒</div><h3>Cybersecurity</h3></div>
+        <div class="topic-hub"><div class="topic-icon">📱</div><h3>Gadgets</h3></div>
+      </div>
+    </section>
+
+    <section class="data-viz-section" id="data">
+      <h2 class="section-title">Tech Trends Visualization</h2>
+      <div class="viz-container">
+        <div id="data-canvas"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

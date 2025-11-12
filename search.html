@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Search - TechSphere</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="search.css" />
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <div class="content">
+    <nav>
+      <div class="logo">TECHSPHERE</div>
+      <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="search.html" class="active">Search</a></li>
+      </ul>
+    </nav>
+
+    <section class="search-container">
+      <input id="search-input" class="search-input" placeholder="Search articles..." />
+      <button id="search-button" class="search-button">Search</button>
+
+      <div id="results-container" class="results-container"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>
